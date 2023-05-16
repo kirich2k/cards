@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/cards/static/css/main.35460bde.css",
-    "main.js": "/cards/static/js/main.bde1649b.js",
-    "static/media/FuturaPT-Medium.ttf": "/cards/static/media/FuturaPT-Medium.4ab635fb83b15f9e3627.ttf",
-    "static/media/FuturaPT-Heavy.ttf": "/cards/static/media/FuturaPT-Heavy.cc2e37d3c134dc895e08.ttf",
-    "static/media/FuturaPT-Demi.ttf": "/cards/static/media/FuturaPT-Demi.626ca5d4172bb348ed1a.ttf",
-    "static/media/FuturaPT-Book.ttf": "/cards/static/media/FuturaPT-Book.16ebcf48c36cedf12d82.ttf",
-    "index.html": "/cards/index.html",
-    "main.35460bde.css.map": "/cards/static/css/main.35460bde.css.map",
-    "main.bde1649b.js.map": "/cards/static/js/main.bde1649b.js.map"
+    "main.css": "/static/css/main.935bd165.css",
+    "main.js": "/static/js/main.29b845da.js",
+    "static/media/FuturaPT-Medium.ttf": "/static/media/FuturaPT-Medium.4ab635fb83b15f9e3627.ttf",
+    "static/media/FuturaPT-Heavy.ttf": "/static/media/FuturaPT-Heavy.cc2e37d3c134dc895e08.ttf",
+    "static/media/FuturaPT-Demi.ttf": "/static/media/FuturaPT-Demi.626ca5d4172bb348ed1a.ttf",
+    "static/media/FuturaPT-Book.ttf": "/static/media/FuturaPT-Book.16ebcf48c36cedf12d82.ttf",
+    "index.html": "/index.html",
+    "main.935bd165.css.map": "/static/css/main.935bd165.css.map",
+    "main.29b845da.js.map": "/static/js/main.29b845da.js.map"
   },
   "entrypoints": [
-    "static/css/main.35460bde.css",
-    "static/js/main.bde1649b.js"
+    "static/css/main.935bd165.css",
+    "static/js/main.29b845da.js"
   ]
 }
