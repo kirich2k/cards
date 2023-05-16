@@ -1,0 +1,210 @@
+@font-face {
+  font-family: "FuturaPT Book";
+  src: local("FuturaPT Book"), local("FuturaPT-Book"), url(../fonts/FuturaPT-Book.ttf);
+}
+@font-face {
+  font-family: "FuturaPT Heavy";
+  src: local("FuturaPT Heavy"), local("FuturaPT-Heavy"), url(../fonts/FuturaPT-Heavy.ttf);
+}
+@font-face {
+  font-family: "FuturaPT Demi";
+  src: local("FuturaPT Demi"), local("FuturaPT-Demi"), url(../fonts/FuturaPT-Demi.ttf);
+}
+.card-container {
+  max-width: 1328px;
+  width: 100%;
+  margin-top: 102px;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  z-index: 1;
+  max-width: 332px;
+  width: 100%;
+  min-height: 574px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: visible;
+}
+.card:hover {
+  z-index: 50;
+}
+.card:hover .card__description {
+  position: relative;
+  width: 362px;
+  padding: 0px 15px;
+}
+.card:hover .card__footer {
+  position: absolute;
+  bottom: -67px;
+  left: 0px;
+  width: 362px;
+  max-width: unset;
+  display: inline-flex;
+}
+.card__img {
+  position: relative;
+  max-width: 332px;
+  width: 100%;
+  height: 444px;
+  cursor: pointer;
+}
+.card__img img {
+  width: 100%;
+  pointer-events: none;
+}
+.card__sale {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 41px;
+  height: 24px;
+  background-color: white;
+  color: #d01345;
+  font-family: "FuturaPT Demi";
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  cursor: default;
+}
+.card__favorite {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  width: 25px;
+  height: 21px;
+  cursor: pointer;
+}
+.card__favorite svg {
+  width: 26px;
+  height: 22px;
+  fill: white;
+  stroke: #2d2d2d;
+}
+.card__favorite.-active svg {
+  fill: #d01345;
+  stroke: white;
+}
+.card__description {
+  width: 100%;
+  height: 100%;
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: white;
+}
+.card__title {
+  font-family: "FuturaPT Book";
+  max-width: 306px;
+  width: 100%;
+  cursor: pointer;
+}
+.card__price {
+  max-width: 144px;
+  width: 100%;
+  margin-bottom: 32px;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.card__last-price {
+  font-size: 12px;
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+.card__new-price {
+  margin-left: 5px;
+  font-family: "FuturaPT Heavy";
+  font-size: 16px;
+  color: #d01345;
+}
+.card__footer {
+  display: none;
+  max-width: calc(100% - 30px);
+  width: 100%;
+  padding: 10px 14px 21px 16px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  background-color: white;
+}
+.card__size {
+  margin-top: 2px;
+  margin-bottom: 19px;
+}
+.card__btn-buy {
+  margin: 0px 0px 19px 0px;
+  width: 100px;
+  height: 48px;
+  text-align: center;
+  font-family: "FuturaPT Demi";
+  font-size: 12px;
+  line-height: 24px;
+  color: white;
+  background-color: #2d2d2d;
+}
+
+.size {
+  max-width: 127px;
+  width: 100%;
+  height: 44px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.size__title {
+  font-family: "FuturaPT Book";
+  font-size: 14px;
+  line-height: 16px;
+  color: #2d2d2d;
+  opacity: 0.6;
+}
+.size__container {
+  width: 100%;
+  margin-top: 8px;
+  display: inline-flex;
+  flex-direction: row;
+}
+.size__btn {
+  margin-right: 16px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.size__btn:last-child {
+  margin-right: 0px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 1365px) {
+  .main__container {
+    max-width: unset;
+    padding: 0px 15px;
+    justify-content: center;
+    padding-bottom: 80px;
+  }
+}
+@media (max-width: 370px) {
+  .card {
+    min-height: unset;
+  }
+  .card:hover .card__description {
+    width: 100%;
+    padding: 0px;
+  }
+  .card:hover .card__footer {
+    width: 100%;
+  }
+  .card__price {
+    margin-top: 11px;
+  }
+}/*# sourceMappingURL=main.css.map */
