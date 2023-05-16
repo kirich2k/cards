@@ -3,8 +3,10 @@ import "./main.css";
 import Cards from "../arrays/card";
 
 const Main: React.FC = () => {
-    const addFavoritre = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
-        e.currentTarget.classList.toggle('-active')
+    const addFavoritre = (
+        e: React.MouseEvent<HTMLButtonElement, MouseEvent>
+    ) => {
+        e.currentTarget.classList.toggle("-active");
     };
     return (
         <>
@@ -21,9 +23,16 @@ const Main: React.FC = () => {
                             size,
                         }) => (
                             <div className="card-container__item card" key={id}>
-                                <div className="card__img">
+                                <div className="card__img-container">
                                     <div className="card__sale">-{sale}%</div>
-                                    <img src={img} alt="img" />
+                                    <div className="card__img">
+                                        <img
+                                            src={img}
+                                            alt="img"
+                                            loading="lazy"
+                                        />
+                                    </div>
+
                                     <button
                                         className="card__favorite"
                                         onClick={(e) => addFavoritre(e)}
